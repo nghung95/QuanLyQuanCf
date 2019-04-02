@@ -32,10 +32,10 @@
             this.btExit = new System.Windows.Forms.Button();
             this.btLogin = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbPassWord = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbUserName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -55,6 +55,7 @@
             // 
             // btExit
             // 
+            this.btExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btExit.Location = new System.Drawing.Point(231, 111);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(81, 23);
@@ -75,20 +76,20 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txbPassWord);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(3, 57);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(312, 48);
             this.panel3.TabIndex = 0;
             // 
-            // textBox2
+            // txbPassWord
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(193, 20);
-            this.textBox2.TabIndex = 0;
+            this.txbPassWord.Location = new System.Drawing.Point(116, 13);
+            this.txbPassWord.Name = "txbPassWord";
+            this.txbPassWord.PasswordChar = '*';
+            this.txbPassWord.Size = new System.Drawing.Size(193, 20);
+            this.txbPassWord.TabIndex = 0;
             // 
             // label2
             // 
@@ -102,19 +103,19 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txbUserName);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(312, 48);
             this.panel2.TabIndex = 2;
             // 
-            // textBox1
+            // txbUserName
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 13);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(193, 20);
-            this.textBox1.TabIndex = 0;
+            this.txbUserName.Location = new System.Drawing.Point(116, 13);
+            this.txbUserName.Name = "txbUserName";
+            this.txbUserName.Size = new System.Drawing.Size(193, 20);
+            this.txbUserName.TabIndex = 0;
             // 
             // label1
             // 
@@ -137,7 +138,6 @@
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fLogin_FormClosing);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -152,11 +152,11 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbUserName;
         private System.Windows.Forms.Button btExit;
         private System.Windows.Forms.Button btLogin;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbPassWord;
         private System.Windows.Forms.Label label2;
     }
 }
