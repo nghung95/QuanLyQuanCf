@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 using QuanLyQuanCF.DAO;
+using QuanLyQuanCF.DTO;
+
 
 namespace QuanLyQuanCF
 {

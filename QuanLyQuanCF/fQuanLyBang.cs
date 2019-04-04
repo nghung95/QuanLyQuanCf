@@ -10,34 +10,25 @@ using QuanLyQuanCF.DTO;
 using System.Data.SqlClient;
 using QuanLyQuanCF.DAO;
 using System.Globalization;
+using System.Threading;
 
 
 namespace QuanLyQuanCF
 {
     public partial class fTableManager : Form
     {
-        //private Account loginAccount;
-
-        //public Account LoginAccount
-        //{
-        //    get { return loginAccount; }
-        //    set { loginAccount = value; ChangeAccount(loginAccount.Type); }
-        //}
+       
         public fTableManager()
         {
             InitializeComponent();
-            //this.LoginAccount = acc;
-
             LoadTable();
             LoadCategory();
             LoadComboboxTable(cbSwitchTable);
+
+            
         }
         #region Method
-        //void ChangeAccount(int type)
-        //{
-        //    adminToolStripMenuItem.Enabled = type == 1;
-        //    thôngTinTàiKhoảnToolStripMenuItem.Text += " (" + LoginAccount.DisplayName + ")";
-        //}
+        
         void LoadTable()
         {
             flpTable.Controls.Clear();
@@ -101,7 +92,7 @@ namespace QuanLyQuanCF
             }
             CultureInfo culture = new CultureInfo("vi-VN");
 
-            //Thread.CurrentThread.CurrentCulture = culture;
+            Thread.CurrentThread.CurrentCulture = culture;
 
             txbTotalPrice.Text = totalPrice.ToString("c", culture);
 
@@ -124,16 +115,38 @@ namespace QuanLyQuanCF
             this.Close();
         }
 
-        private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            fAccountProfile f = new fAccountProfile();
-            f.ShowDialog();
-        }
-
         private void adminToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fAdmin f = new fAdmin();
+            //f.ShowDialog();
+            //fAdmin f = new fAdmin();
+            //f.loginAccount = LoginAccount;
+            f.InsertFood += new EventHandler(f_InsertFood);
+            f.DeleteFood += new EventHandler(f_DeleteFood);
+            f.UpdateFood += new EventHandler(f_UpdateFood);
             f.ShowDialog();
+        }
+
+        void f_UpdateFood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).ID);
+            if (lsvBill.Tag != null)
+                ShowBill((lsvBill.Tag as Table).ID);
+        }
+
+        void f_InsertFood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).ID);
+            if (lsvBill.Tag != null)
+                ShowBill((lsvBill.Tag as Table).ID);
+        }
+
+        void f_DeleteFood(object sender, EventArgs e)
+        {
+            LoadFoodListByCategoryID((cbCategory.SelectedItem as Category).ID);
+            if (lsvBill.Tag != null)
+                ShowBill((lsvBill.Tag as Table).ID);
+            LoadTable();
         }
         #endregion
 

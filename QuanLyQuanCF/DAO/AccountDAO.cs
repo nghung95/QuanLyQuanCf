@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
 using System.Data;
+using QuanLyQuanCF.DTO;
+using System.Security.Cryptography;
 
 namespace QuanLyQuanCF.DAO
 {
@@ -21,9 +23,9 @@ namespace QuanLyQuanCF.DAO
 
         public bool Login(string userName, string passWord)
         {
-            string query = "USP_Login @userName , @passWord ";
+            string query = "SELECT * FROM dbo.Account WHERE UserName = N'" + userName + "' AND PassWord = N'" + passWord + "' ";
 
-            DataTable result = DataProvider.Instance.ExecuteQuery(query, new object[]{userName,passWord});
+            DataTable result = DataProvider.Instance.ExecuteQuery(query);
 
             return result.Rows.Count > 0;
         }

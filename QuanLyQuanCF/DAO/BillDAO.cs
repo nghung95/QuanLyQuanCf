@@ -42,7 +42,9 @@ namespace QuanLyQuanCF.DAO
         {
             string query = "UPDATE dbo.Bill SET dateCheckOut = GETDATE(), status = 1, " + "discount = " + discount + ", totalPrice = " + totalPrice + " WHERE id = " + id;
             DataProvider.Instance.ExecuteNonQuery(query);
+
         }
+
         public void InsertBill(int id)
         {
             DataProvider.Instance.ExecuteNonQuery("exec USP_InsertBill @idTable", new object[] { id });
