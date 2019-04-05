@@ -17,7 +17,7 @@ namespace QuanLyQuanCF.DAO
             private set { FoodDAO.instance = value; }
         }
 
-        private FoodDAO() { }
+        public FoodDAO() { }
 
         public List<Food> GetFoodByCategoryID(int id)
         {

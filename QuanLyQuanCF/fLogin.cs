@@ -35,7 +35,7 @@ namespace QuanLyQuanCF
                 MessageBox.Show("Sai tên tài khoản hoặc mật khẩu!");
             }
         }
-        bool Login(string userName, string passWord)
+        public bool Login(string userName, string passWord)
         {
             return AccountDAO.Instance.Login(userName, passWord);
         }
