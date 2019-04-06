@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="9c7c043b-12ac-4a72-867d-0c279d5f0f15" name="Administrator@0JC5E4J89IIGSFK 2019-04-05 23:46:16" runUser="0JC5E4J89IIGSFK\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="28d37e11-905d-48f5-94df-ac22f24a05af">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Administrator_0JC5E4J89IIGSFK 2019-04-05 23_46_16">
+      <DeploymentItem filename="C:\Users\Administrator\Desktop\QuanLyQuanCF\QuanLyQuanCF\bin\Debug\QuanLyQuanCF.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-04-05T23:46:16.8861865+07:00" queuing="2019-04-05T23:46:16.9891924+07:00" start="2019-04-05T23:46:17.0171940+07:00" finish="2019-04-05T23:46:17.6352293+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="2" error="0" failed="3" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestXoaThucAn" storage="d:\testlogin\testlogin\bin\debug\testlogin.dll" id="c62e7c74-6642-f23f-3653-5a65dc00b9de">
+      <DeploymentItems>
+        <DeploymentItem filename="TestLogin\TestXoaThucAn.csv" />
+      </DeploymentItems>
+      <Execution id="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" />
+      <TestMethod codeBase="D:/TestLogin/TestLogin/bin/Debug/TestLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLogin.UnitTest1, TestLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestXoaThucAn" />
+      <DataSource connectionString="|DataDirectory|\TestXoaThucAn.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="TestXoaThucAn#csv" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="c62e7c74-6642-f23f-3653-5a65dc00b9de" executionId="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" testId="c62e7c74-6642-f23f-3653-5a65dc00b9de" testName="TestXoaThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.3343517" startTime="2019-04-05T23:46:17.0081935+07:00" endTime="2019-04-05T23:46:17.6122280+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" resultType="DataDrivenTest">
+      <Counters error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="2" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="b2717186-4036-42d8-bf21-580438da49d7" parentExecutionId="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" testId="c62e7c74-6642-f23f-3653-5a65dc00b9de" testName="TestXoaThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0941149" startTime="2019-04-05T23:46:17.4822206+07:00" endTime="2019-04-05T23:46:17.5812262+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" dataRowInfo="0" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </Message>
+              <StackTrace>   at TestLogin.UnitTest1.TestXoaThucAn() in D:\TestLogin\TestLogin\UnitTest1.cs:line 70
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+        <UnitTestResult executionId="72386ec3-9261-4471-b023-6a83e6e5bb2a" parentExecutionId="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" testId="c62e7c74-6642-f23f-3653-5a65dc00b9de" testName="TestXoaThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0078408" startTime="2019-04-05T23:46:17.5812262+07:00" endTime="2019-04-05T23:46:17.5892267+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="5f575eb5-c918-4c96-ac66-fce6dc005380" parentExecutionId="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" testId="c62e7c74-6642-f23f-3653-5a65dc00b9de" testName="TestXoaThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0025200" startTime="2019-04-05T23:46:17.5892267+07:00" endTime="2019-04-05T23:46:17.5912268+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" dataRowInfo="2" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="5bc1d18c-25d5-4c1a-ba44-7f9b50e242b9" parentExecutionId="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" testId="c62e7c74-6642-f23f-3653-5a65dc00b9de" testName="TestXoaThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0058950" startTime="2019-04-05T23:46:17.5912268+07:00" endTime="2019-04-05T23:46:17.5972271+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91b6fb08-a79e-42a1-bb42-ee80a7728eeb" dataRowInfo="3" resultType="DataDrivenDataRow">
+          <Output>
+            <ErrorInfo>
+              <Message>Test method TestLogin.UnitTest1.TestXoaThucAn threw exception: 
+System.FormatException: Input string was not in a correct format.</Message>
+              <StackTrace>    at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer&amp; number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at TestLogin.UnitTest1.TestXoaThucAn() in D:\TestLogin\TestLogin\UnitTest1.cs:line 62
+</StackTrace>
+            </ErrorInfo>
+          </Output>
+        </UnitTestResult>
+      </InnerResults>
+    </UnitTestResult>
+  </Results>
+</TestRun>

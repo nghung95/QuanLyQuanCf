@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a5b230ef-7752-4b45-824c-6e49741453fa" name="Administrator@0JC5E4J89IIGSFK 2019-04-06 00:05:48" runUser="0JC5E4J89IIGSFK\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="28d37e11-905d-48f5-94df-ac22f24a05af">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Administrator_0JC5E4J89IIGSFK 2019-04-06 00_05_48">
+      <DeploymentItem filename="C:\Users\Administrator\Desktop\QuanLyQuanCF\QuanLyQuanCF\bin\Debug\QuanLyQuanCF.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-04-06T00:05:48.6642083+07:00" queuing="2019-04-06T00:05:48.7872154+07:00" start="2019-04-06T00:05:48.8002161+07:00" finish="2019-04-06T00:05:49.2632426+07:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="4" executed="4" passed="4" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestUpdateFood" storage="d:\testlogin\testlogin\bin\debug\testlogin.dll" id="ff5f86c9-adbb-d9e0-25e9-82be096fd454">
+      <DeploymentItems>
+        <DeploymentItem filename="TestLogin\TestUpdateFood.csv" />
+      </DeploymentItems>
+      <Execution id="a07db9f6-99b4-4b9e-b8b1-590175d9564e" />
+      <TestMethod codeBase="D:/TestLogin/TestLogin/bin/Debug/TestLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLogin.UnitTest1, TestLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestUpdateFood" />
+      <DataSource connectionString="|DataDirectory|\TestUpdateFood.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="TestUpdateFood#csv" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="ff5f86c9-adbb-d9e0-25e9-82be096fd454" executionId="a07db9f6-99b4-4b9e-b8b1-590175d9564e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a07db9f6-99b4-4b9e-b8b1-590175d9564e" testId="ff5f86c9-adbb-d9e0-25e9-82be096fd454" testName="TestUpdateFood" computerName="0JC5E4J89IIGSFK" duration="00:00:00.2114106" startTime="2019-04-06T00:05:48.8022162+07:00" endTime="2019-04-06T00:05:49.2262405+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a07db9f6-99b4-4b9e-b8b1-590175d9564e" resultType="DataDrivenTest">
+      <Counters error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="3" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="a2d3ec9f-4e05-4636-a600-e5ca242f3065" parentExecutionId="a07db9f6-99b4-4b9e-b8b1-590175d9564e" testId="ff5f86c9-adbb-d9e0-25e9-82be096fd454" testName="TestUpdateFood" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0301479" startTime="2019-04-06T00:05:49.1742375+07:00" endTime="2019-04-06T00:05:49.2092395+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a07db9f6-99b4-4b9e-b8b1-590175d9564e" dataRowInfo="0" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="2b05109b-3093-41ba-a283-6d4bb1ab007f" parentExecutionId="a07db9f6-99b4-4b9e-b8b1-590175d9564e" testId="ff5f86c9-adbb-d9e0-25e9-82be096fd454" testName="TestUpdateFood" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0006690" startTime="2019-04-06T00:05:49.2092395+07:00" endTime="2019-04-06T00:05:49.2102396+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a07db9f6-99b4-4b9e-b8b1-590175d9564e" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="2cc11c0f-63e2-4c46-b9dc-6de48bd767df" parentExecutionId="a07db9f6-99b4-4b9e-b8b1-590175d9564e" testId="ff5f86c9-adbb-d9e0-25e9-82be096fd454" testName="TestUpdateFood" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0002180" startTime="2019-04-06T00:05:49.2102396+07:00" endTime="2019-04-06T00:05:49.2102396+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a07db9f6-99b4-4b9e-b8b1-590175d9564e" dataRowInfo="2" resultType="DataDrivenDataRow" />
+      </InnerResults>
+    </UnitTestResult>
+  </Results>
+</TestRun>

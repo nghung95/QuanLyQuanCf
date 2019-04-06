@@ -1,0 +1,5 @@
+﻿idFood,name,id,price,expected
+0,ga,4,10000,false
+1,heo,5,10000,false
+1,trau,3,20000,false
+8,Luon,3,100000,true

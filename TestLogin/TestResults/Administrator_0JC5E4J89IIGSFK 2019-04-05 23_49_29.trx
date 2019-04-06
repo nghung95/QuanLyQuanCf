@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="eb46356c-210b-4d58-9b25-ee8451a2ae9a" name="Administrator@0JC5E4J89IIGSFK 2019-04-05 23:49:29" runUser="0JC5E4J89IIGSFK\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="28d37e11-905d-48f5-94df-ac22f24a05af">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Administrator_0JC5E4J89IIGSFK 2019-04-05 23_49_29">
+      <DeploymentItem filename="C:\Users\Administrator\Desktop\QuanLyQuanCF\QuanLyQuanCF\bin\Debug\QuanLyQuanCF.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-04-05T23:49:29.8332224+07:00" queuing="2019-04-05T23:49:31.4573153+07:00" start="2019-04-05T23:49:31.7143300+07:00" finish="2019-04-05T23:49:35.0145188+07:00" />
+  <ResultSummary outcome="Error">
+    <Counters total="12" executed="12" passed="11" error="0" failed="0" timeout="0" aborted="1" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="0JC5E4J89IIGSFK" outcome="Error" timestamp="2019-04-05T23:49:35.0125187+07:00">
+        <Text>Test host process exited unexpectedly.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestQuanLyThucAn" storage="d:\testlogin\testlogin\bin\debug\testlogin.dll" id="df7e0222-d733-2d06-3b64-bdc6c3c19ed5">
+      <DeploymentItems>
+        <DeploymentItem filename="TestLogin\TestQuanLyThucAn.csv" />
+      </DeploymentItems>
+      <Execution id="06181ebc-30bb-4902-9b99-b7d1e652d155" />
+      <TestMethod codeBase="D:/TestLogin/TestLogin/bin/Debug/TestLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLogin.UnitTest1, TestLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestQuanLyThucAn" />
+      <DataSource connectionString="|DataDirectory|\TestQuanLyThucAn.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="TestQuanLyThucAn#csv" />
+    </UnitTest>
+    <UnitTest name="TestXoaThucAn" storage="d:\testlogin\testlogin\bin\debug\testlogin.dll" id="c62e7c74-6642-f23f-3653-5a65dc00b9de">
+      <DeploymentItems>
+        <DeploymentItem filename="TestLogin\TestXoaThucAn.csv" />
+      </DeploymentItems>
+      <Execution id="7461272a-ed51-47c0-861b-a988f62a0f3d" />
+      <TestMethod codeBase="D:/TestLogin/TestLogin/bin/Debug/TestLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLogin.UnitTest1, TestLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestXoaThucAn" />
+      <DataSource connectionString="|DataDirectory|\TestXoaThucAn.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="TestXoaThucAn#csv" />
+    </UnitTest>
+    <UnitTest name="TestLogin" storage="d:\testlogin\testlogin\bin\debug\testlogin.dll" id="8276a061-e630-7f55-6667-ffdda0dec24b">
+      <DeploymentItems>
+        <DeploymentItem filename="TestLogin\TestData.csv" />
+      </DeploymentItems>
+      <Execution id="904dcf4d-556c-4aa6-8e4f-2833452810b9" />
+      <TestMethod codeBase="D:/TestLogin/TestLogin/bin/Debug/TestLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLogin.UnitTest1, TestLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestLogin" />
+      <DataSource connectionString="|DataDirectory|\TestData.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="TestData#csv" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="df7e0222-d733-2d06-3b64-bdc6c3c19ed5" executionId="06181ebc-30bb-4902-9b99-b7d1e652d155" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8276a061-e630-7f55-6667-ffdda0dec24b" executionId="904dcf4d-556c-4aa6-8e4f-2833452810b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c62e7c74-6642-f23f-3653-5a65dc00b9de" executionId="7461272a-ed51-47c0-861b-a988f62a0f3d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="06181ebc-30bb-4902-9b99-b7d1e652d155" testId="df7e0222-d733-2d06-3b64-bdc6c3c19ed5" testName="TestQuanLyThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.6924239" startTime="2019-04-05T23:49:31.9493435+07:00" endTime="2019-04-05T23:49:34.0054611+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06181ebc-30bb-4902-9b99-b7d1e652d155" resultType="DataDrivenTest">
+      <Counters error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="4" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="07d23e63-89fc-459c-b376-feafff5f7f88" parentExecutionId="06181ebc-30bb-4902-9b99-b7d1e652d155" testId="df7e0222-d733-2d06-3b64-bdc6c3c19ed5" testName="TestQuanLyThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.1463515" startTime="2019-04-05T23:49:33.7684475+07:00" endTime="2019-04-05T23:49:33.9234564+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06181ebc-30bb-4902-9b99-b7d1e652d155" dataRowInfo="0" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="5d0f5624-0ff6-4098-bf61-83aae5a26254" parentExecutionId="06181ebc-30bb-4902-9b99-b7d1e652d155" testId="df7e0222-d733-2d06-3b64-bdc6c3c19ed5" testName="TestQuanLyThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0057892" startTime="2019-04-05T23:49:33.9234564+07:00" endTime="2019-04-05T23:49:33.9294567+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06181ebc-30bb-4902-9b99-b7d1e652d155" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="f1f49ee2-0380-49f9-8c32-36b692538f79" parentExecutionId="06181ebc-30bb-4902-9b99-b7d1e652d155" testId="df7e0222-d733-2d06-3b64-bdc6c3c19ed5" testName="TestQuanLyThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0065231" startTime="2019-04-05T23:49:33.9294567+07:00" endTime="2019-04-05T23:49:33.9364571+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06181ebc-30bb-4902-9b99-b7d1e652d155" dataRowInfo="2" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="5574672d-18a7-48c0-abdf-a684bc8129f1" parentExecutionId="06181ebc-30bb-4902-9b99-b7d1e652d155" testId="df7e0222-d733-2d06-3b64-bdc6c3c19ed5" testName="TestQuanLyThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0074000" startTime="2019-04-05T23:49:33.9364571+07:00" endTime="2019-04-05T23:49:33.9434575+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="06181ebc-30bb-4902-9b99-b7d1e652d155" dataRowInfo="3" resultType="DataDrivenDataRow" />
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="904dcf4d-556c-4aa6-8e4f-2833452810b9" testId="8276a061-e630-7f55-6667-ffdda0dec24b" testName="TestLogin" computerName="0JC5E4J89IIGSFK" duration="00:00:00.7688489" startTime="2019-04-05T23:49:34.0264623+07:00" endTime="2019-04-05T23:49:34.8715106+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="904dcf4d-556c-4aa6-8e4f-2833452810b9" resultType="DataDrivenTest">
+      <Counters error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="5" completed="0" inProgress="0" pending="0" />
+      <InnerResults>
+        <UnitTestResult executionId="d6e32316-27d6-4d63-9570-e3e1d42324cc" parentExecutionId="904dcf4d-556c-4aa6-8e4f-2833452810b9" testId="8276a061-e630-7f55-6667-ffdda0dec24b" testName="TestLogin" computerName="0JC5E4J89IIGSFK" duration="00:00:00.3757488" startTime="2019-04-05T23:49:34.3344799+07:00" endTime="2019-04-05T23:49:34.7105014+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="904dcf4d-556c-4aa6-8e4f-2833452810b9" dataRowInfo="0" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="68c6f4db-01c4-4d7c-ab04-92e335251b55" parentExecutionId="904dcf4d-556c-4aa6-8e4f-2833452810b9" testId="8276a061-e630-7f55-6667-ffdda0dec24b" testName="TestLogin" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0254486" startTime="2019-04-05T23:49:34.7105014+07:00" endTime="2019-04-05T23:49:34.7355028+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="904dcf4d-556c-4aa6-8e4f-2833452810b9" dataRowInfo="1" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="d9937d22-f2d2-4ff0-9336-241f429c2a5b" parentExecutionId="904dcf4d-556c-4aa6-8e4f-2833452810b9" testId="8276a061-e630-7f55-6667-ffdda0dec24b" testName="TestLogin" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0240636" startTime="2019-04-05T23:49:34.7355028+07:00" endTime="2019-04-05T23:49:34.7595042+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="904dcf4d-556c-4aa6-8e4f-2833452810b9" dataRowInfo="2" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="ebf3c53a-57ca-4af6-a6a6-8ddbfa523dc2" parentExecutionId="904dcf4d-556c-4aa6-8e4f-2833452810b9" testId="8276a061-e630-7f55-6667-ffdda0dec24b" testName="TestLogin" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0248428" startTime="2019-04-05T23:49:34.7595042+07:00" endTime="2019-04-05T23:49:34.7845056+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="904dcf4d-556c-4aa6-8e4f-2833452810b9" dataRowInfo="3" resultType="DataDrivenDataRow" />
+        <UnitTestResult executionId="e7cd7a35-2665-4b27-9702-7df1e1159a6d" parentExecutionId="904dcf4d-556c-4aa6-8e4f-2833452810b9" testId="8276a061-e630-7f55-6667-ffdda0dec24b" testName="TestLogin" computerName="0JC5E4J89IIGSFK" duration="00:00:00.0233597" startTime="2019-04-05T23:49:34.7845056+07:00" endTime="2019-04-05T23:49:34.8085070+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="904dcf4d-556c-4aa6-8e4f-2833452810b9" dataRowInfo="4" resultType="DataDrivenDataRow" />
+      </InnerResults>
+    </UnitTestResult>
+    <UnitTestResult executionId="7461272a-ed51-47c0-861b-a988f62a0f3d" testId="c62e7c74-6642-f23f-3653-5a65dc00b9de" testName="TestXoaThucAn" computerName="0JC5E4J89IIGSFK" duration="00:00:00.1280074" startTime="2019-04-05T23:49:34.8865114+07:00" endTime="2019-04-05T23:49:35.0145188+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Aborted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7461272a-ed51-47c0-861b-a988f62a0f3d">
+    </UnitTestResult>
+  </Results>
+</TestRun>
