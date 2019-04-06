@@ -49,15 +49,17 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTest1.cs" />
+    <Compile Include="UnitTest2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="TestData.csv" />
     <None Include="TestQuanLyThucAn.csv" />
+    <None Include="TestTimKiem.csv" />
     <None Include="TestUpdateFood.csv" />
     <None Include="TestXoaThucAn.csv" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\Administrator\Desktop\QuanLyQuanCF\QuanLyQuanCF\QuanLyQuanCF.csproj">
+    <ProjectReference Include="..\..\QuanLyQuanCF\QuanLyQuanCF.csproj">
       <Project>{97B182EC-0B77-42A9-971B-DCB015C2065C}</Project>
       <Name>QuanLyQuanCF</Name>
     </ProjectReference>

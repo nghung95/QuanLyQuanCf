@@ -28,7 +28,7 @@ namespace QuanLyQuanCF
             LoadListBillByDate(dateTimePicker1.Value,dateTimePicker2.Value);
         }
         #region methods
-        List<Food> SearchFoodByName(string name)
+        public List<Food> SearchFoodByName(string name)
         {
             List<Food> listFood = FoodDAO.Instance.SearchFoodByName(name);
 
