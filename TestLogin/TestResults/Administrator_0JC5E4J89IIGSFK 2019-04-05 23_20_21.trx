@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="659cb93a-c58d-476e-90f2-122847e2f81b" name="Administrator@0JC5E4J89IIGSFK 2019-04-05 23:20:21" runUser="0JC5E4J89IIGSFK\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="28d37e11-905d-48f5-94df-ac22f24a05af">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment runDeploymentRoot="Administrator_0JC5E4J89IIGSFK 2019-04-05 23_20_21">
+      <DeploymentItem filename="C:\Users\Administrator\Desktop\QuanLyQuanCF\QuanLyQuanCF\bin\Debug\QuanLyQuanCF.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific>
+        <UnitTestRunConfig testTypeId="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b">
+          <AssemblyResolution>
+            <TestDirectory useLoadContext="true" />
+          </AssemblyResolution>
+        </UnitTestRunConfig>
+        <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+          <Browser name="Internet Explorer 7.0">
+            <Headers>
+              <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+              <Header name="Accept" value="*/*" />
+              <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+              <Header name="Accept-Encoding" value="GZIP" />
+            </Headers>
+          </Browser>
+        </WebTestRunConfiguration>
+      </TestTypeSpecific>
+      <AgentRule name="LocalMachineDefaultRole">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2019-04-05T23:20:21.1162015+07:00" queuing="2019-04-05T23:20:21.5012235+07:00" start="2019-04-05T23:20:21.6052295+07:00" finish="2019-04-05T23:20:22.3912745+07:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="0JC5E4J89IIGSFK" outcome="Warning" timestamp="2019-04-05T23:20:21.2962118+07:00">
+        <Text>Warning: Test Run deployment issue: Failed to get the file for deployment item 'TestQuanLyThucAn.csv\TestData.csv' specified by the test 'TestLogin.UnitTest1.TestQuanLyThucAn': System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\TestLogin\TestQuanLyThucAn.csv\TestData.csv'.</Text>
+        <Exception>System.IO.DirectoryNotFoundException: Could not find a part of the path 'D:\TestLogin\TestQuanLyThucAn.csv\TestData.csv'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.File.GetAttributes(String path)
+   at Microsoft.VisualStudio.TestTools.Common.SingleFileProvider.GetFilePaths()
+   at Microsoft.VisualStudio.TestTools.TestManagement.DeploymentCoverageItem.GetFiles(TestRunConfiguration runConfig)
+   at Microsoft.VisualStudio.TestTools.TestManagement.DeploymentManager.DoDeployment(TestRun run, FileCopyService fileCopyService)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="TestQuanLyThucAn" storage="d:\testlogin\testlogin\bin\debug\testlogin.dll" id="df7e0222-d733-2d06-3b64-bdc6c3c19ed5">
+      <DeploymentItems>
+        <DeploymentItem filename="TestQuanLyThucAn.csv\TestData.csv" />
+      </DeploymentItems>
+      <Execution id="26be8119-d7d5-436a-a432-8db910a089b1" />
+      <TestMethod codeBase="D:/TestLogin/TestLogin/bin/Debug/TestLogin.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestLogin.UnitTest1, TestLogin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TestQuanLyThucAn" />
+      <DataSource connectionString="|DataDirectory|\TestQuanLyThucAn.csv" providerInvariantName="Microsoft.VisualStudio.TestTools.DataSource.CSV" tableName="TestData#csv" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="df7e0222-d733-2d06-3b64-bdc6c3c19ed5" executionId="26be8119-d7d5-436a-a432-8db910a089b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="26be8119-d7d5-436a-a432-8db910a089b1" testId="df7e0222-d733-2d06-3b64-bdc6c3c19ed5" testName="TestQuanLyThucAn" computerName="0JC5E4J89IIGSFK" startTime="2019-04-05T23:20:21.6362313+07:00" endTime="2019-04-05T23:20:22.2682674+07:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26be8119-d7d5-436a-a432-8db910a089b1" resultType="DataDrivenTest">
+      <Output>
+        <ErrorInfo>
+          <Message>The unit test adapter failed to connect to the data source or to read the data. For more information on troubleshooting this error, see "Troubleshooting Data-Driven Unit Tests" (http://go.microsoft.com/fwlink/?LinkId=62412) in the MSDN Library.
+Error details: The Microsoft Jet database engine could not find the object 'TestData.csv'.  Make sure the object exists and that you spell its name and the path name correctly.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
