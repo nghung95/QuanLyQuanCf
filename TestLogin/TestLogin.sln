@@ -10,7 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyQuanCF", "C:\Users\Administrator\Desktop\QuanLyQuanCF\QuanLyQuanCF\QuanLyQuanCF.csproj", "{97B182EC-0B77-42A9-971B-DCB015C2065C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuanLyQuanCF", "..\QuanLyQuanCF\QuanLyQuanCF.csproj", "{97B182EC-0B77-42A9-971B-DCB015C2065C}"
 EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
