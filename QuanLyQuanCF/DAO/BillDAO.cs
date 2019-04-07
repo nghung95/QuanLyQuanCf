@@ -10,7 +10,7 @@ namespace QuanLyQuanCF.DAO
 {
     public class BillDAO
     {
-        private static BillDAO instance;
+        public static BillDAO instance;
 
         public static BillDAO Instance
         {
@@ -18,7 +18,7 @@ namespace QuanLyQuanCF.DAO
             private set { BillDAO.instance = value; }
         }
 
-        private BillDAO() { }
+        public BillDAO() { }
 
         /// <summary>
         /// Thành công: bill ID
