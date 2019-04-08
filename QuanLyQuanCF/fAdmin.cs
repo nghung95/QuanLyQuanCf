@@ -19,7 +19,6 @@ namespace QuanLyQuanCF
         public fAdmin()
         {
             InitializeComponent();
-            LoadAccoutList();
             LoadDateTimePickerBill();
             LoadListFood();
             dtgvFood.DataSource = foodList;
@@ -64,12 +63,6 @@ namespace QuanLyQuanCF
         }
 
         #endregion
-        void LoadAccoutList()
-        {
-            string query = "EXEC dbo.USP_GetAccountByUserName @userName";
-
-            dtgvAccount.DataSource = DataProvider.Instance.ExecuteQuery(query, new object[] { "staff" });
-        }
 
         private void btnViewBill_Click(object sender, EventArgs e)
         {

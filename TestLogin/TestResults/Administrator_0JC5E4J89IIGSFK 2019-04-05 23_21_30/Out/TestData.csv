@@ -1,6 +1,0 @@
-﻿username,password,expected
-toan,123,false
-abc,123,false
-tin,1234,false
-hung,123,true
-tin,123,true

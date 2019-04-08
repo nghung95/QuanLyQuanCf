@@ -54,7 +54,7 @@
   <ItemGroup>
     <None Include="TestData.csv" />
     <None Include="TestGetUncheckBillIDByTableID.csv" />
-    <None Include="TestQuanLyThucAn.csv" />
+    <None Include="TestThemThucAn.csv" />
     <None Include="TestTimKiem.csv" />
     <None Include="TestTimKiemByCategoryId.csv" />
     <None Include="TestUpdateFood.csv" />

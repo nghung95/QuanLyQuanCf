@@ -12,11 +12,6 @@ namespace TestLogin
     [TestClass]
     public class UnitTest1
     {
-        //[TestMethod]
-        //public void TestMethod1()
-        //{
-        //}
-
         private TestContext testContext;
 
         public TestContext TestContext
@@ -39,10 +34,9 @@ namespace TestLogin
             Assert.AreEqual(expected, actual);
         }
 
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\TestQuanLyThucAn.csv", "TestQuanLyThucAn#csv", DataAccessMethod.Sequential), DeploymentItem("TestLogin\\TestQuanLyThucAn.csv"), TestMethod]
-        public void TestQuanLyThucAn()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\TestThemThucAn.csv", "TestThemThucAn#csv", DataAccessMethod.Sequential), DeploymentItem("TestLogin\\TestThemThucAn.csv"), TestMethod]
+        public void TestThemThucAn()
         {
-            //string a = TestContext.DataRow[0].ToString();
             int id = Int32.Parse(TestContext.DataRow[0].ToString());
             string name = TestContext.DataRow[1].ToString();
             float price = float.Parse(TestContext.DataRow[2].ToString());
