@@ -53,22 +53,17 @@ namespace TestLogin
             Assert.AreEqual(expected, actual);
         }
 
-        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\TestGetBillListByDate.csv", "TestGetBillListByDate#csv", DataAccessMethod.Sequential), DeploymentItem("TestLogin\\TestGetBillListByDate.csv"), TestMethod]
-        public void TestGetBillListByDate()
+        [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\TestGetUncheckBillIDByTableID.csv", "TestGetUncheckBillIDByTableID#csv", DataAccessMethod.Sequential), DeploymentItem("TestLogin\\TestGetUncheckBillIDByTableID.csv"), TestMethod]
+        public void TestGetUncheckBillIDByTableID()
         {
-            System.DateTime dtDatetime = new DateTime(1970, 1, 1, 0, 0, 0, 0, System.DateTimeKind.Utc);
-            DateTime checkIn = dtDatetime.AddSeconds(Int32.Parse(TestContext.DataRow[0].ToString())).ToLocalTime();
-            DateTime checkOut = dtDatetime.AddSeconds(Int32.Parse(TestContext.DataRow[1].ToString())).ToLocalTime();
-            int count = Int32.Parse(TestContext.DataRow[2].ToString());
-            bool expected = Boolean.Parse(TestContext.DataRow[3].ToString());
-
+            int billId = Int32.Parse(TestContext.DataRow[0].ToString());
+            bool expected = Boolean.Parse(TestContext.DataRow[1].ToString());
+            
             BillDAO bill = new BillDAO();
 
             bool actual = false;
-            if (bill.GetBillListByDate(checkIn, checkOut).Rows.Count == count)
+            if (bill.GetUncheckBillIDByTableID(billId) != -1)
                 actual = true;
-
-
             Assert.AreEqual(expected, actual);
         }
     }
