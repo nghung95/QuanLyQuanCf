@@ -40,10 +40,6 @@
     </Reference>
     <Reference Include="System.Data" />
     <Reference Include="System.Windows.Forms" />
-<<<<<<< HEAD
-=======
-    <Reference Include="System.XML" />
->>>>>>> 4ae8e5658a14e1d02c5e487c1ba851e80ff0bbdc
   </ItemGroup>
   <ItemGroup>
     <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
@@ -52,31 +48,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-    <Compile Include="UnitTest1.cs" />
-=======
-    <None Include="TestGetUncheckBillIDByTableID.csv" />
-    <None Include="TestTimKiemByCategoryId.csv" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="UnitTest2.cs" />
->>>>>>> 4ae8e5658a14e1d02c5e487c1ba851e80ff0bbdc
   </ItemGroup>
   <ItemGroup>
     <None Include="TestData.csv" />
+    <None Include="TestGetUncheckBillIDByTableID.csv" />
     <None Include="TestQuanLyThucAn.csv" />
-<<<<<<< HEAD
-=======
     <None Include="TestTimKiem.csv" />
->>>>>>> 4ae8e5658a14e1d02c5e487c1ba851e80ff0bbdc
+    <None Include="TestTimKiemByCategoryId.csv" />
     <None Include="TestUpdateFood.csv" />
     <None Include="TestXoaThucAn.csv" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <ProjectReference Include="C:\Users\Administrator\Desktop\QuanLyQuanCF\QuanLyQuanCF\QuanLyQuanCF.csproj">
-=======
-    <ProjectReference Include="..\..\QuanLyQuanCF\QuanLyQuanCF.csproj">
->>>>>>> 4ae8e5658a14e1d02c5e487c1ba851e80ff0bbdc
       <Project>{97B182EC-0B77-42A9-971B-DCB015C2065C}</Project>
       <Name>QuanLyQuanCF</Name>
     </ProjectReference>
