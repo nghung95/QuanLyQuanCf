@@ -21,7 +21,7 @@ namespace QuanLyQuanCF.DAO
         public static int TableWidth = 90;
         public static int TableHeight = 90;
 
-        private TableDAO() { }
+        public TableDAO() { }
 
         public void SwitchTable(int id1, int id2)
         {

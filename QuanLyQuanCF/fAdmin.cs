@@ -106,20 +106,27 @@ namespace QuanLyQuanCF
 
         private void btnAddFood_Click(object sender, EventArgs e)
         {
-            string name = txbFoodName.Text;
-            int categoryID = (cbFoodCategory.SelectedItem as Category).ID;
-            float price = (float)nmFoodPrice.Value;
+            try
+            {
+                string name = txbFoodName.Text;
+                int categoryID = (cbFoodCategory.SelectedItem as Category).ID;
+                float price = (float)nmFoodPrice.Value;
 
-            if (FoodDAO.Instance.InsertFood(name, categoryID, price))
-            {
-                MessageBox.Show("Thêm món thành công");
-                LoadListFood();
-                if (insertFood != null)
-                    insertFood(this, new EventArgs());
+                if (FoodDAO.Instance.InsertFood(name, categoryID, price))
+                {
+                    MessageBox.Show("Thêm món thành công");
+                    LoadListFood();
+                    if (insertFood != null)
+                        insertFood(this, new EventArgs());
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi khi thêm thức ăn");
+                }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Có lỗi khi thêm thức ăn");
+                MessageBox.Show("Chọn tên danh mục món ăn");
             }
         }
 

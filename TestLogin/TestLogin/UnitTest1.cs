@@ -66,7 +66,7 @@ namespace TestLogin
         [DataSource("Microsoft.VisualStudio.TestTools.DataSource.CSV", "|DataDirectory|\\TestUpdateFood.csv", "TestUpdateFood#csv", DataAccessMethod.Sequential), DeploymentItem("TestLogin\\TestUpdateFood.csv"), TestMethod]
         public void TestUpdateFood()
         {
-            //string a = TestContext.DataRow[0].ToString();
+
             int idFood = Int32.Parse(TestContext.DataRow[0].ToString());
             string name = TestContext.DataRow[1].ToString();
             int id = Int32.Parse(TestContext.DataRow[2].ToString());

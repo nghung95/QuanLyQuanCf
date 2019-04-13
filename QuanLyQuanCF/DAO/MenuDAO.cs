@@ -7,9 +7,9 @@ using QuanLyQuanCF.DTO;
 
 namespace QuanLyQuanCF.DAO
 {
-   public class MenuDAO
+    public class MenuDAO
     {
-       private static MenuDAO instance;
+        private static MenuDAO instance;
 
         public static MenuDAO Instance
         {
@@ -18,6 +18,7 @@ namespace QuanLyQuanCF.DAO
         }
 
         private MenuDAO() { }
+        //sai
 
         public List<Menu> GetListMenuByTable(int id)
         {
@@ -34,5 +35,11 @@ namespace QuanLyQuanCF.DAO
 
             return listMenu;
         }
+
+        //public void UpdateStatusBiilingInfomation(int billId)
+        //{
+        //    string query = "UPDATE dbo.Bill SET status = 0 WHERE id = " + billId;
+        //    DataProvider.Instance.ExecuteNonQuery(query);
+        //}
     }
 }
