@@ -221,7 +221,7 @@
             0,
             0,
             0});
-            // 
+ 
             // btnAddFood
             // 
             this.btnAddFood.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

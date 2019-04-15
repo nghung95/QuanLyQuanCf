@@ -59,7 +59,7 @@
             this.btExit.Location = new System.Drawing.Point(231, 111);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(81, 23);
-            this.btExit.TabIndex = 1;
+            this.btExit.TabIndex = 3;
             this.btExit.Text = "Thoát";
             this.btExit.UseVisualStyleBackColor = true;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
@@ -69,7 +69,7 @@
             this.btLogin.Location = new System.Drawing.Point(119, 111);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(81, 23);
-            this.btLogin.TabIndex = 0;
+            this.btLogin.TabIndex = 2;
             this.btLogin.Text = "Đăng nhập";
             this.btLogin.UseVisualStyleBackColor = true;
             this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
@@ -81,7 +81,7 @@
             this.panel3.Location = new System.Drawing.Point(3, 57);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(312, 48);
-            this.panel3.TabIndex = 0;
+            this.panel3.TabIndex = 1;
             // 
             // txbPassWord
             // 
@@ -108,7 +108,7 @@
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(312, 48);
-            this.panel2.TabIndex = 2;
+            this.panel2.TabIndex = 0;
             // 
             // txbUserName
             // 
