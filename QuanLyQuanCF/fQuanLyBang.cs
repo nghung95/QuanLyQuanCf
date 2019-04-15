@@ -249,6 +249,7 @@ namespace QuanLyQuanCF
             this.Close();
         }
 
+
         //private void UpdateStatusBiilingInfomation(int billId)
         //{
         //    // UPDATE thông tin bill cho table đó
